@@ -46,7 +46,7 @@ public class Spreadsheet implements Grid {
          return this.getGridText();        
       }
       
-      // if "=" follows the cell name, then its a cell assignment, 
+      // if "=" follows the cell name, then it is a cell assignment, 
       else if (commandArray[1].equals("=")) {
          int equalsIndex = command.indexOf("=");
          int quoteIndex = command.indexOf("\"", equalsIndex);
